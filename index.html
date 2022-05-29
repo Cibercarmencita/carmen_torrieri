@@ -17,9 +17,8 @@
   </head>
   <body>
     <header id="idheader">
-    
     </header>
-    <h2> </h2>  
+  <main>
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
       <!-- Indicators/dots -->
@@ -29,32 +28,109 @@
         <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
       </div>
       
-      <!-- The slideshow/carousel -->
-      <div class="carousel-inner">
+     <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="imagenes/otro.jpg" alt="Los Angeles" class="d-block" style="width:100%">
         </div>
         <div class="carousel-item">
-          <img src="imagenes/otro01.jpg" alt="Chicago" class="d-block" style="width:100%">
+          <img src="imagenes/otro03.jpeg" alt="Chicago" class="d-block" style="width:100%">
         </div>
         <div class="carousel-item">
           <img src="imagenes/otro02.jpg" alt="New York" class="d-block" style="width:100%">
         </div>
       </div>
-      
-      <!-- Left and right controls/icons -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+     <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
       <span class="carousel-control-next-icon"></span>
       </button>
-    </div>
+      </div>
+   </div>
+  </head>
+  <body>
+    <div>
+      <h3>Carmen Torrieri</h3>
+        <p class="responsivo"> Artista visual, docente y activista. Licenciada en Artes Visuales y Profesora de Artes de la UNA actualmente Maestranda en Tecnología y Estética de las Artes Electrónicas de la UNTREF. 
+          Participa en el dictado de talleres artísticos y pedagógicos en relación con la comunidad, desarrolla tareas de investigación de la cátedra Anahí Cáceres del Departamento de Artes Visuales, UNA. Desde hace años ha participado en exposiciones colectivas, encuentros y actividades, como así también en charlas sobre arte contemporáneo. 
+        </p>
+      </div>
+      <section class="contact">
+        <a id="contact"></a>
+        <h2>Contacto</h2>
+        <div class="form-container">
+          <form name ="contacto" action="" id="form" class="form">
+            <label for="fname" class="label">Nombre y apellido*</label>
+             <div class="input-container" id="fname-group">
+                <input type="text" id="fname" name="nombre" class="input" placeholder="John">
+                  <p class="form-field-error">El nombre debe tener sólo letras. 
+                    caracteres.</span>
+                </div>
+                <label for="email" class="label">Email*</label>
+                <div class="input-container" id="email-group">
+                    <input type="email" id="email" name="email" class="input" placeholder="john.doe@gmail.com">
+                    <p class="form-field-error"> El correo solo puede contener letras, números, puntos,
+                        guiones y guión bajo.</p>
+                </div>
+                <label for="phone" class="label">Número de teléfono*</label>
+                <div class="input-container" id="phone-group">
+                    <input type="tel" id="phone" name="phone" class="input" placeholder="11-11111111">
+                     <p class="form-field-error">El teléfono solo puede contener números.</p>
+                </div>
+
+                <div class="select-group" id="reason-group">
+                    <div class="select-container">
+                        <select id="reason">
+                            <option value="none">Motivo*</option>
+                            <option value="comment" class="select-option">Comentario</option>
+                            <option value="question" class="select-option">Consulta</option>
+                        </select>
+                    </div>
+                    <p class="form-field-error">Requerido. Seleccione una opción.</p>
+                </div>
+                <label for="message" class="label">Mensaje*</label>
+               <div class="input-container" id="message-group">
+                    <textarea id="message" name="message" class="input" rows="5"
+                        placeholder="Escribe tu mensaje aquí">
+                    </textarea>
+                     <p class="form-field-error">Requerido. El mensaje debe tener un máximo de 200 caracteres.</p>
+                </div>
+                <input type="button" value="Enviar" onclick="valida_envia()">
+                <p>Gracias por contactarse!</p>
+              </form>
+        </div>
+    </section>
+    <script>
+ </main> 
+      function valida_envia() {
+          if (document.contacto.nombre.value.length == 0) {
+              alert("Tiene que escribir su nombre")
+              document.contacto.nombre.focus()
+              return 0;
+          } 
+        alert("Muchas gracias por enviar el formulario");
+          document.contacto.submit();
+      }
+     
+    </script>
     
-  <footer id="idfooter">
-  </footer>
+  <footer>
+    <br>
+    <div class="i-container">
+            <a href="mailto: ctorrieri@gmail.com" target="_blank">
+                <i class="fa fas fab fa-envelope"></i>
+            </a>
+            <a href="https://github.com/Cibercarmencita" target="_blank">
+                <i class="fa fas fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/carmen_cita87" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+        <br>
+        Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/2.5/ar/">Licencia Creative Commons Atribución 2.5 Argentina</a> - Creative Commons @2022 Carmen Torrieri .
+   </footer> 
   <script src="JS/index.js"></script>
 </body>
-
 </html>
 

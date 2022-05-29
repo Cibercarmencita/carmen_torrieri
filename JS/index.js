@@ -1,17 +1,12 @@
 let cad=`
 <h1></h1>
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <a class="navbar-brand" href="index.html">Carmen Torrieri</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+<nav class="navbar navbar-expand-md navbar-dark">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
-
-      <li class="nav-item">
-        <a class="nav-link" href="biografia.html">Biografía</a>
-      </li>
-      <li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link" href="alcubo.html">Al cubo</a>
       </li>
       <li class="nav-item">
@@ -23,10 +18,7 @@ let cad=`
       <li class="nav-item">
          <a class="nav-link" href="enconstruccion.html">Procesos</a>
       </li>
-      <li class="nav-item">
-         <a class="nav-link" href="contacto.html">Contacto</a>
-      </li>
-    </ul>
+     </ul>
 </nav>
 `
 document.getElementById("idheader").innerHTML=cad;
@@ -37,4 +29,6 @@ cad=`
     
 `
 document.getElementById("idfooter").innerHTML=cad;
+
+
 

@@ -7,13 +7,16 @@
     background-color: #2e0249;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-
-  .example {
-      padding: 20px;
-      color: #2E0249;
-  }
   
-  .header {
+  header #button-navbar {
+      display: none;
+      background-color: #2e0249;
+      align-content: center;
+  }
+nav{
+  color: #0B0F20;
+} 
+.header {
     text-align: center;
     padding: 32px;
   }
@@ -39,12 +42,12 @@
     margin-top: 8px;
     vertical-align: middle;
   }
-  
-  /* Style the buttons */
+
   .btn {
     border: none;
     outline: none;
     padding: 10px 16px;
+    
     background-color: #f1f1f1;
     cursor: pointer;
     font-size: 18px;
@@ -62,6 +65,8 @@
   p{
    margin:10;
    padding: 10;
+   padding-left: 20px;
+   padding-right: 20px;
    color: gray;
    text-align: justify;
    font-size: small;
@@ -76,25 +81,25 @@
   /* Pantallas a partir de 600 píxeles 
   (Ancho como mínimo de 600px)*/
   @media only screen and (min-width: 600px) {
-      .responsivo {font-size: 18px;}
+      .responsivo {font-size: 16px;}
   }
 
   /* Pantallas de mas de 600 y menos de 768 píxeles */
   /*(Ancho como mínimo de 768px)*/
   @media only screen and (min-width: 768px) {
-      .responsivo {font-size: 22px;}
+      .responsivo {font-size: 18px;}
   }
 
   /* Pantallas de mas de 768 y menos de 992 píxeles */
   /*(Ancho como mínimo de 992px)*/        
   @media only screen and (min-width: 992px) {
-     .responsivo {font-size: 26px;}
+     .responsivo {font-size: 20px;}
   }
 
   /* Pantallas de mas de 992 y menos de 1200 píxeles */
   /*(Ancho como mínimo de 1200px)*/          
   @media only screen and (min-width: 1200px) {
-     .responsivo {font-size: 36px;}
+     .responsivo {font-size: 24px;}
   } 
 
   body {
@@ -103,7 +108,12 @@
     text-decoration-color: #570A57;
     margin: 10;
     padding: 10;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+   
   }
+
   h1, h2, h3, h4, h5, h6{
     padding: 10px;
     color: #A91079;
@@ -112,20 +122,10 @@
     text-align: center;
     font: "Lucida Sans";
    }
- 
-  .card{
-    width:25%; 
-    float:left; 
-    margin:1%  4%
-  }
   
   .imgindex, .imgabout {
     width: 100%;
     padding: 0 10%;
-  }
-  
-  img.logo {
-    width: 25%;
   }
   
   iframe {
@@ -141,29 +141,27 @@
     width: 100%;
   }
   
-  .img-proyectos {
-    width: 30%;
-    margin-left: 0%;
-  }
-
   .menu ul {
     list-style-type: none;
     margin: 10;
-    padding: 10;
+    padding: 10px;
     background-color:#2E0249;
     color: #570A57;
     box-shadow: 0 1px 3px #A91079; 0 1px 2px #A91079;
-    
   }
   
   .menu li, .boton {
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 7px;
     background-color: #2E0249;
     color: #570A57;
     box-shadow: 0 1px 3px #A91079, 0 1px 2px #A91079;
   }
-  
+  label{
+    color: #A91079;
+    padding: 5px;
+  }
+    
   li a, .boton {
     text-decoration: none;
     background-color: #2e0249;
@@ -193,7 +191,6 @@
     border: 1px #2e0249;
   }
   
-   
   #idfooter {
     background-color:#570A57; 
     color: #0B0F20; 
@@ -208,7 +205,23 @@
     height: 75px;
     margin-top: 0;
     }
+    
+    footer {
+      background-color: #570A57;
+      margin-top: 20px;
+      margin: 2px;
+      width: 100%;
+      height: 100px;
+      text-align: center;
+  }
   
+  footer p {
+      margin-top: 160px;
+      font-size: 1rem;
+      color: #ffffff;
+      line-height: 1.57em;
+      margin-bottom: 30px;
+  }
   #contenedor {
     width: 280px;
     margin: 0 auto;
