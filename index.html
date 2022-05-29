@@ -18,8 +18,7 @@
   <body>
     <header id="idheader">
     </header>
-  <main>
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
       <!-- Indicators/dots -->
       <div class="carousel-indicators">
@@ -62,22 +61,18 @@
           <form name ="contacto" action="" id="form" class="form">
             <label for="fname" class="label">Nombre y apellido*</label>
              <div class="input-container" id="fname-group">
-                <input type="text" id="fname" name="nombre" class="input" placeholder="John">
-                  <p class="form-field-error">El nombre debe tener sólo letras. 
-                    caracteres.</span>
+                <input type="text" name="nombre" class="input" placeholder="Car" maxlength="100">
+                  
                 </div>
                 <label for="email" class="label">Email*</label>
                 <div class="input-container" id="email-group">
-                    <input type="email" id="email" name="email" class="input" placeholder="john.doe@gmail.com">
-                    <p class="form-field-error"> El correo solo puede contener letras, números, puntos,
-                        guiones y guión bajo.</p>
-                </div>
+                    <input type="email" id="email" name="email" class="input" placeholder="nombre@gmail.com">
+                <div>
                 <label for="phone" class="label">Número de teléfono*</label>
                 <div class="input-container" id="phone-group">
-                    <input type="tel" id="phone" name="phone" class="input" placeholder="11-11111111">
-                     <p class="form-field-error">El teléfono solo puede contener números.</p>
+                    <input type="tel" id="phone" name="phone" class="input" placeholder="15-11111111">
                 </div>
-
+                <br>
                 <div class="select-group" id="reason-group">
                     <div class="select-container">
                         <select id="reason">
@@ -86,22 +81,20 @@
                             <option value="question" class="select-option">Consulta</option>
                         </select>
                     </div>
-                    <p class="form-field-error">Requerido. Seleccione una opción.</p>
                 </div>
+                <br>
                 <label for="message" class="label">Mensaje*</label>
                <div class="input-container" id="message-group">
-                    <textarea id="message" name="message" class="input" rows="5"
-                        placeholder="Escribe tu mensaje aquí">
+                    <textarea id="message" name="message" class="input" rows="10"
+                        placeholder="Escribe tu mensaje aquí.">
                     </textarea>
-                     <p class="form-field-error">Requerido. El mensaje debe tener un máximo de 200 caracteres.</p>
-                </div>
+                    </div>
                 <input type="button" value="Enviar" onclick="valida_envia()">
                 <p>Gracias por contactarse!</p>
               </form>
         </div>
     </section>
     <script>
- </main> 
       function valida_envia() {
           if (document.contacto.nombre.value.length == 0) {
               alert("Tiene que escribir su nombre")

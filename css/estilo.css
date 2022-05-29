@@ -71,7 +71,12 @@ nav{
    text-align: justify;
    font-size: small;
    }
-  
+   
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
  /* Pantallas de menos de 600 píxeles 
   (Ancho máximo hasta 600px)*/
   @media only screen and (max-width: 600px) {
@@ -255,5 +260,8 @@ a:hover {
     transition-property: all;
     transition-duration: 0.8s;
     transition-timing-function: ease-in;
+}
+form {
+  text-align: center;
 }
 </style>
